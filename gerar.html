@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerador de Imagens</title>
+  <link rel="stylesheet" href="estilos/estilos.css" />
+
+</head>
+<body>
+
+  <header><h1>Gerar Imagem</h1></header>
+
+  <nav class="top-nav">
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="gerar.html">Gerar Imagem</a></li>
+      <li><a href="galeria.html">Galeria</a></li>
+      <li><a href="contato.html"><strong>Contato</strong></a></li>
+      <li><a href="sobre.html"><strong>Sobre</strong></a></li>
+    </ul>
+  </nav>
+
+  <p style="text-align: center; max-width: 600px; margin: auto;">
+    Estamos sempre buscando melhorar a experiência de quem usa nosso gerador de imagens com inteligência artificial. 
+    Seja para enviar sugestões ou descrever a imagem ideal, use o formulário abaixo:
+  </p>
+ 
+  <form id="formulario" action="#">
+    <label for="descricao">Descreva a imagem desejada:</label>
+    <input type="text" id="descricao" name="descricao" required>
+  
+    <label for="mensagem">Mensagem adicional:</label>
+    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+  
+    <input type="submit" value="Enviar">
+  </form>
+
+
+  <div class="imagem-gerada">
+    <h3>Imagem gerada:</h3>
+    <img src="https://picsum.photos/seed/exemplo/600/400" alt="Imagem gerada de exemplo">
+  </div>
+
+
+  <a class="link-voltar" href="index.html">← Voltar à página inicial</a>
+
+</body>
+</html>
